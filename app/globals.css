@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #F8F6F1;
+    color: #0A0A0A;
+  }
+
+  ::selection {
+    background-color: #0A0A0A;
+    color: #F8F6F1;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #F8F6F1;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: #D4CFC4;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply inline-block px-8 py-3 bg-colets-black text-colets-white text-xs tracking-ultra uppercase
+    hover:bg-colets-olive transition-colors duration-300;
+  }
+
+  .btn-outline {
+    @apply inline-block px-8 py-3 border border-colets-black text-colets-black text-xs tracking-ultra uppercase
+    hover:bg-colets-black hover:text-colets-white transition-colors duration-300;
+  }
+
+  .section-label {
+    @apply text-[9px] tracking-ultra uppercase text-colets-gray mb-8;
+  }
+
+  .input-field {
+    @apply w-full bg-transparent border-b border-colets-light py-3 px-0
+    text-sm text-colets-black placeholder-colets-gray
+    focus:outline-none focus:border-colets-black transition-colors duration-200;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* Hero fade-in animation */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease-out forwards;
+}
+
+.animate-fade-up-delay-1 {
+  animation: fadeUp 0.8s ease-out 0.2s both;
+}
+
+.animate-fade-up-delay-2 {
+  animation: fadeUp 0.8s ease-out 0.4s both;
+}
+
+.animate-fade-up-delay-3 {
+  animation: fadeUp 0.8s ease-out 0.6s both;
+}
