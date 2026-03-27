@@ -196,7 +196,7 @@ export default function Checkout() {
               </button>
 
               <p className="text-[10px] text-center tracking-wide text-colets-gray">
-                Se generará un PDF y te redirigiremos a WhatsApp
+                Te redirigiremos a WhatsApp
               </p>
             </form>
           </div>
