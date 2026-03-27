@@ -19,7 +19,7 @@ export const metadata = {
     title: 'Colets',
     description: 'Representando la real coletera.',
   },
-  title: 'Colets — Streetwear',
+  title: 'Colets',
   description: 'Representando la real coletera. Santa Marta, Colombia.',
   icons: {
   icon: '/palmera1.png',  
