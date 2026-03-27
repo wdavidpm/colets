@@ -47,11 +47,11 @@ export default function Checkout() {
     const orderId = generateOrderId()
 
     // Generate PDF
-    try {
+/*    try {
       await generatePDF({ orderId, items, total, customer: form })
     } catch (err) {
       console.error('PDF error:', err)
-    }
+    }*/
 
     // Build WhatsApp URL
     const message = buildWhatsAppMessage({ orderId, items, total, customer: form })
@@ -166,7 +166,7 @@ export default function Checkout() {
                   name="telefono"
                   value={form.telefono}
                   onChange={handleChange}
-                  placeholder="3001234567"
+                  placeholder="300000000"
                   className="input-field"
                   autoComplete="tel"
                 />
@@ -181,10 +181,9 @@ export default function Checkout() {
                   ¿Cómo funciona?
                 </p>
                 <ul className="text-xs text-colets-gray space-y-1 leading-relaxed mt-2">
-                  <li>1. Recibirás un PDF con los detalles de tu pedido</li>
-                  <li>2. Serás redirigido a WhatsApp con tu pedido listo</li>
-                  <li>3. Confirmamos disponibilidad y coordinar el envío</li>
-                  <li>4. Pago contra entrega en todo Colombia</li>
+                  <li>1. Serás redirigido a WhatsApp con tu pedido listo</li>
+                  <li>2. Confirmamos disponibilidad y coordinar el envío</li>
+                  <li>3. Una vez confirmado el pago se realizara el envío</li>
                 </ul>
               </div>
 

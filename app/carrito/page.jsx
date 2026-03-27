@@ -118,7 +118,7 @@ export default function Carrito() {
               </div>
 
               <p className="text-[10px] tracking-wide text-colets-gray text-center py-2">
-                Pago contra entrega — Envío a todo Colombia
+                Envío a todo Colombia
               </p>
 
               <div className="flex flex-col sm:flex-row gap-3 pt-4">
